@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World travel</title>
+    <link rel="stylesheet" href="/WorldTravel/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <!-- Modal -->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entre na sua conta</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+          </div>
+          <div class="form-group">
+            <label for="loginSenha">Senha</label>
+            <input type="password" class="form-control" id="loginSenha">
+          </div>
+          <button type="submit" class="btn btn-primary">Entrar na conta</button>
+          <small id="emailHelp" >Esqueceu a senha, <a href="#">clique aqui</a></small>
+        </form>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <nav
+      class="
+        navbar navbar-expand-md navbar-light
+        bg-white
+        p-1
+        box-shadow
+        fixed-top
+      "
+    >
+      <a class="navbar-brand" href="index.html">
+        <img src="/WorldTravel/img/4130923.jpg" width="90" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Locais</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="local.html">California</a>
+              <a class="dropdown-item" href="local.html">Paris</a>
+              <a class="dropdown-item" href="local.html">Dublin</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="planos.html">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn ml-md-2 btn-outline-primary" href="incricao.html"
+              >Inscreva-se</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- fale conosco -->
+    <section class="container">
+      <div class="container text-center">
+        <div class="my-5">
+        <span class="h6 d-block text-center">POSSUI ALGUMA DÚVIDA?</span>
+        <h2 class="display-4 text-primary ">Fale Conosco</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg mb-5">
+          <form class="bg-light rounded p-4 box-shadow">
+            <div class="form-group">
+              <label for="clienteNome">Nome</label>
+              <input type="text" class="form-control" id="clienteNome" >
+            </div>
+              <div class="form-group">
+              <label for="clienteEmail">Email</label>
+              <input type="email" class="form-control" id="clienteEmail" >
+            </div>
+           
+            <div class="form-group">
+              <label for="clienteMensagem">Mensagem</label>
+              <textarea id="clienteMensagem" class="form-control" rows="4"></textarea>
+
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+          </form>
+        </div>
+        
+        <div class="col-lg">
+
+          <h2 class="h6">NOSSO ENDEREÇO</h2>
+          <a href=""> <img class="img-fluid box-shadow rounded mb-4"  src="/WorldTravel/img/mapa.png" alt="Endereço da empresa"> </a>
+
+            <h2 class="h6">DADOS DE CONTATO</h2>
+            <ul class="list-unstyled text-secondary">
+              <li>caravan@caravan.com.br</li>
+              <li>21 99999-9999r</li>
+              <li>De Seg. à Sex. das 8h às 18h</li>
+            </ul>
+         
+            <h4 class="h6">Redes sociais</h4>
+            <ul class="list-unstyled text-secondary">
+              <li><a href="#" style="width: 100px;" class="btn btn-outline-secondary btn-sm mb-2 ">Facebook</a></li>
+              <li><a href="#" style="width: 100px;" class="btn btn-outline-secondary btn-sm  mb-2">twitter</a></li>
+              <li><a href="#" style="width: 100px;" class="btn btn-outline-secondary btn-sm mb-2 ">youtube</a></li>
+            </ul>
+        
+          
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    
+    
+    <!-- pergntas frequentes -->
+    <section class="container ">
+      <div class="container text-center">
+        <div class="my-5">
+        <span class="h6 d-block text-center">Ainda está com dúividas?</span>
+        <h2 class="display-4 text-primary ">Perguntas Frequentes</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="pergunta1">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  → É possível cancelar a viagem?
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="pergunta2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapsedois" aria-expanded="true" aria-controls="collapsedois">
+                    → Qual a principal forma de viagem?
+                  </button>
+                </h5>
+              </div>
+  
+              <div id="collapsedois" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                </div>
+              </div>
+            </div>
+
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="pergunta3">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapsetres" aria-expanded="true" aria-controls="collapsedois">
+                      → Qual o melhor destino de viagem?
+                    </button>
+                  </h5>
+                </div>
+    
+                <div id="collapsetres" class="collapse " aria-labelledby="headingtres" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                  </div>
+                </div>
+              </div>
+
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="pergunta3">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapsequatro" aria-expanded="true" aria-controls="collapsedquatro">
+                        → Vocês dão descontos para grupos grandes?
+                      </button>
+                    </h5>
+                  </div>
+      
+                  <div id="collapsequatro" class="collapse " aria-labelledby="headingquatro" data-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="text-center my-4">
+          <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+          <a href="contato.html" class="btn btn-primary btn-lg ">Entre em contato</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6 ">PÁGINAS</h4>
+            <ul class="list-unstyled">
+              <li> <a href="planos.html">Planos</a> </li>
+              <li> <a href="contato.html">Contato</a> </li>
+              <li> <a href="inscricao.html">Increva-se</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4 class="h6 ">locais</h4>
+            <ul class="list-unstyled">
+              <li> <a href="local.html">California</a> </li>
+              <li> <a href="local.html">Paris</a> </li>
+              <li> <a href="local.html">Dublin</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="h6">DADOS DE CONTATO</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>caravan@caravan.com.br</li>
+              <li>21 99999-9999r</li>
+              <li>De Seg. à Sex. das 8h às 18h</li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h4 class="h6">Redes sociais</h4>
+            <ul class="list-unstyled text-secondary">
+              <li><a href="#" style="width: 100px;" class="btn btn-outline-secondary btn-sm mb-2 ">Facebook</a></li>
+              <li><a href="#" style="width: 100px;" class="btn btn-outline-secondary btn-sm  mb-2">twitter</a></li>
+              <li><a href="#" style="width: 100px;" class="btn btn-outline-secondary btn-sm mb-2 ">youtube</a></li>
+            </ul>
+        </div>
+      </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">WorldTravel &copy;. Alguns direitos reservados.</p>
+      </div>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/WorldTravel/js/script.js"></script>
+  </body>
+</html>
