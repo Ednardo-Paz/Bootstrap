@@ -15,15 +15,44 @@
   </head>
   <body>
 
+    <!-- Modal -->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entre na sua conta</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+          </div>
+          <div class="form-group">
+            <label for="loginSenha">Senha</label>
+            <input type="password" class="form-control" id="loginSenha">
+          </div>
+          <button type="submit" class="btn btn-primary">Entrar na conta</button>
+          <small id="emailHelp" >Esqueceu a senha, <a href="#">clique aqui</a></small>
+        </form>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <nav
       class="
         navbar navbar-expand-md navbar-light
-        bg-light
-        fixed-top
+        bg-white
         p-1
-    
         box-shadow
+        fixed-top
       "
     >
       <a class="navbar-brand" href="#">
@@ -66,7 +95,7 @@
             <a class="nav-link" href="contato.html">Contato</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
           </li>
           <li class="nav-item">
             <a class="btn ml-md-2 btn-outline-primary" href="incricao.html"
@@ -80,7 +109,7 @@
     <section class="container-fluid">
       <div class="row bg-dark text-white">
 
-        <div class="col-lg-7 p-0">
+        <div class="col-lg-7 p-0" >
           <div id="carouselCidades" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselCidades" data-slide-to="0" class="active"></li>
@@ -122,7 +151,7 @@
           </div>
         </div>
 
-        <div class="col-lg-5 p-4">
+        <div class="col-lg-5 p-4 align-self-center">
           <h1 class="display-4">Realiza a viagem do seu sonho.</h1>
           <p class="lead">O melhor local para suia viagem é com a WorldTravel, mais de 5.000 excurssões concluidas.</p>
           <form action="">
@@ -204,7 +233,133 @@
         <footer class="blockquote-footer text-white ">Bob Dylan <cite title="Source Title"></cite></footer>
       </blockquote>
     </section>
+    
+    <section class="container ">
+      <div class="container text-center">
+        <div class="my-5">
+        <span class="h6 d-block text-center">Ainda está com dúividas?</span>
+        <h2 class="display-4 text-primary ">Perguntas Frequentes</h2>
+      </div>
 
+      <div class="row justify-content-center">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="pergunta1">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  → É possível cancelar a viagem?
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="pergunta2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapsedois" aria-expanded="true" aria-controls="collapsedois">
+                    → Qual a principal forma de viagem?
+                  </button>
+                </h5>
+              </div>
+  
+              <div id="collapsedois" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                </div>
+              </div>
+            </div>
+
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="pergunta3">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapsetres" aria-expanded="true" aria-controls="collapsedois">
+                      → Qual o melhor destino de viagem?
+                    </button>
+                  </h5>
+                </div>
+    
+                <div id="collapsetres" class="collapse " aria-labelledby="headingtres" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                  </div>
+                </div>
+              </div>
+
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="pergunta3">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapsequatro" aria-expanded="true" aria-controls="collapsedquatro">
+                        → Vocês dão descontos para grupos grandes?
+                      </button>
+                    </h5>
+                  </div>
+      
+                  <div id="collapsequatro" class="collapse " aria-labelledby="headingquatro" data-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="text-center my-4">
+          <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+          <a href="contato.html" class="btn btn-primary btn-lg ">Entre em contato</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6 ">PÁGINAS</h4>
+            <ul class="list-unstyled">
+              <li> <a href="planos.html">Planos</a> </li>
+              <li> <a href="contato.html">Contato</a> </li>
+              <li> <a href="inscricao.html">Increva-se</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4 class="h6 ">locais</h4>
+            <ul class="list-unstyled">
+              <li> <a href="local.html">California</a> </li>
+              <li> <a href="local.html">Paris</a> </li>
+              <li> <a href="local.html">Dublin</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="h6">DADOS DE CONTATO</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>caravan@caravan.com.br</li>
+              <li>21 99999-9999r</li>
+              <li>De Seg. à Sex. das 8h às 18h</li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h4 class="h6">Redes sociais</h4>
+            <ul class="list-unstyled text-secondary">
+              <li><a href="#" style="width: 100px;" class="btn btn-outline-secondary btn-sm mb-2 ">Facebook</a></li>
+              <li><a href="#" style="width: 100px;" class="btn btn-outline-secondary btn-sm  mb-2">twitter</a></li>
+              <li><a href="#" style="width: 100px;" class="btn btn-outline-secondary btn-sm mb-2 ">youtube</a></li>
+            </ul>
+        </div>
+      </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">WorldTravel &copy;. Alguns direitos reservados.</p>
+      </div>
+    </footer>
 
 
   
